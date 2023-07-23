@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { MicrofrontendRoutingModule } from './microfrontend-routing.module';
 import { MicrofrontendComponent } from './microfrontend/microfrontend.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -11,7 +13,9 @@ import { MicrofrontendComponent } from './microfrontend/microfrontend.component'
   ],
   imports: [
     CommonModule,
-    MicrofrontendRoutingModule
+    MicrofrontendRoutingModule,
+    MatCardModule, 
+    MatButtonModule,
   ]
 })
 export class MicrofrontendModule { }

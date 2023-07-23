@@ -1,13 +1,7 @@
 <ul>
-  <li [routerLink]="['/remote']">MicroFrontend</li>
-  <li [routerLink]="['remote1']">MicroFrontend1</li>
+  <li><img src="../assets/angular.png" width="50"></li>
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="/remote">Remote</a></li>
 </ul>
 
-<h2>
-  I am shell app, use above links to load the micro frontends running on other
-  ports
-</h2>
-
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+<router-outlet></router-outlet>
